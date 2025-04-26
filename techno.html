@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techno Innovation Club</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #2e7d32;
+            --background-color: #f0f2f5;
+            --form-bg: #ffffff;
+            --text-color: #333;
+            --success-color: #28a745;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: var(--form-bg);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: all 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+        .form-group input[type="submit"] {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.02);
+        }
+
+        .success-message {
+            text-align: center;
+            color: var(--success-color);
+            margin-top: 20px;
+            font-size: 1.2rem;
+            display: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Techno Innovation Club</h1>
+    <p>Welcome to Techno Innovation Club</p>
+</header>
+
+<div class="container">
+    <div class="success-message" id="success-message">
+        شكرا لتسجيلك في Techno Innovation Club! سنتواصل معك قريبا.
+    </div>
+
+    <form action="https://formsubmit.co/yacinemirwim7@gmail.com" method="POST">
+        <!-- Hidden fields to control the form submission -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_autoresponse" value="شكرا لتسجيلك في Techno Innovation Club! سنتواصل معك قريبا.">
+
+        <div class="form-group">
+            <label for="first-name">الاسم الأول</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">الاسم الأخير</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="university-major">التخصص الجامعي</label>
+            <input type="text" id="university-major" name="university-major" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone-number">رقم الهاتف</label>
+            <input type="tel" id="phone-number" name="phone-number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="skill">المهارة</label>
+            <select id="skill" name="skill" required>
+                <option value="programmer">مبرمج</option>
+                <option value="designer">مصمم</option>
+                <option value="engineer">مهندس</option>
+                <option value="other">أخرى</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="تسجيل">
+        </div>
+    </form>
+</div>
+
+<footer>
+    <p>© 2025 Techno Innovation Club. All rights reserved.</p>
+</footer>
+
+</body>
+  </html>
